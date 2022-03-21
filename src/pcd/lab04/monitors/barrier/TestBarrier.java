@@ -11,7 +11,7 @@ public class TestBarrier {
 		
 		Barrier barrier = new FakeBarrier(nWorkers);
 		
-		List<Worker> workers = new ArrayList<Worker>();
+		List<Worker> workers = new ArrayList<>();
 		for (int i = 0; i < nWorkers; i++) {
 			workers.add(new Worker("Worker-"+i, barrier));
 		}
